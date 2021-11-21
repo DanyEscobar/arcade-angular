@@ -12,37 +12,37 @@ export class ServicesComponent implements OnInit {
       image: 'assets/images/dark/1.png',
       title: 'Plans and Projects',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.',
-      link: 'home',
+      link: '',
     },
     {
       image: 'assets/images/dark/2.png',
       title: 'Conceptual Architecture',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.',
-      link: 'home',
+      link: '',
     },
     {
       image: 'assets/images/dark/3.png',
       title: 'Apartment Buildings',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.',
-      link: 'home',
+      link: '',
     },
     {
       image: 'assets/images/dark/4.png',
       title: 'Skyscrapers Buildings',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.',
-      link: 'home',
+      link: '',
     },
     {
       image: 'assets/images/dark/5.png',
       title: 'Documentation',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.',
-      link: 'home',
+      link: '',
     },
     {
       image: 'assets/images/dark/6.png',
       title: 'Restauration Projects',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.',
-      link: 'home',
+      link: '',
     },
   ];
   constructor() { }

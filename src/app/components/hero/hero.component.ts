@@ -14,21 +14,21 @@ export class HeroComponent implements OnInit {
       backgroundImage: 'assets/images/bg-hero.jpeg',
       title: 'Minimalistic <br>Architecture <br> and more',
       seeProject: 'See Project',
-      link: 'home',
+      link: '',
     },
     {
       id: 2,
       backgroundImage: 'assets/images/bg-hero.jpeg',
       title: 'Minimalistic <br>Architecture <br> and more',
       seeProject: 'See Project',
-      link: 'home',
+      link: '',
     },
     {
       id: 3,
       backgroundImage: 'assets/images/bg-hero.jpeg',
       title: 'Minimalistic <br>Architecture <br> and more',
       seeProject: 'See ',
-      link: 'home',
+      link: '',
     },
   ];
   currentIndex = 1;

@@ -1,5 +1,5 @@
 <header class="header-container position-absolute w-100">
-  <a routerLink="home" class="logo-arcade d-inline-block float-start">
+  <a href="" class="logo-arcade d-inline-block float-start">
     <img src="assets/images/logo.png" alt="">
   </a>
   <div class="menu-bars d-block d-md-none position-absolute" (click)="toggleMenu()">
@@ -8,8 +8,8 @@
   <div class="phone-number d-none d-md-inline-block fw-bold float-end me-xl-5">+675 334 567 223</div>
   <nav class="nav-menu d-md-inline-block float-end" [class]="toggle ? 'd-block' : 'd-none'">
     <ul class="list-unstyled p-0 m-0">
-      <li class="d-inline" *ngFor="let itemMenu of menu; let index = index" routerLinkActive="active" id="{{itemMenu.slug}}">
-        <a routerLink="{{itemMenu.slug}}" class="d-block d-md-inline-block text-uppercase position-relative text-decoration-none" (click)="toggleMenu()">
+      <li class="li-menu d-inline" *ngFor="let itemMenu of menu; let index = index" id="{{itemMenu.slug}}" [class.active]="active === itemMenu.slug">
+        <a class="d-block d-md-inline-block text-uppercase position-relative text-decoration-none" (click)="getLocation(itemMenu.slug)">
           {{itemMenu.name}}
         </a>
       </li>

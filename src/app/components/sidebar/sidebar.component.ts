@@ -10,23 +10,23 @@ export class SidebarComponent implements OnInit {
   socialItems: any[] = [
     {
       icon: 'fa fa-pinterest',
-      link: 'home',
+      link: '',
     },
     {
       icon: 'fa fa-linkedin',
-      link: 'home',
+      link: '',
     },
     {
       icon: 'fa fa-instagram',
-      link: 'home',
+      link: '',
     },
     {
       icon: 'fa fa-facebook',
-      link: 'home',
+      link: '',
     },
     {
       icon: 'fa fa-twitter',
-      link: 'home',
+      link: '',
     },
   ];
   constructor() { }

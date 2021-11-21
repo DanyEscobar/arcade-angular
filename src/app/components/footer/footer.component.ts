@@ -10,23 +10,23 @@ export class FooterComponent implements OnInit {
   socials: any[] = [
     {
       icon: 'fa fa-pinterest',
-      link: 'home',
+      link: '',
     },
     {
       icon: 'fa fa-linkedin',
-      link: 'home',
+      link: '',
     },
     {
       icon: 'fa fa-instagram',
-      link: 'home',
+      link: '',
     },
     {
       icon: 'fa fa-facebook',
-      link: 'home',
+      link: '',
     },
     {
       icon: 'fa fa-twitter',
-      link: 'home',
+      link: '',
     },
   ];
   menu: any[] = [
@@ -34,7 +34,7 @@ export class FooterComponent implements OnInit {
       pages: [
         {
           name: 'Home',
-          link: 'home',
+          link: '',
         },
         {
           name: 'About us',
@@ -50,7 +50,7 @@ export class FooterComponent implements OnInit {
         },
         {
           name: 'Blog',
-          link: 'home',
+          link: '',
         },
       ],
     },
@@ -58,23 +58,23 @@ export class FooterComponent implements OnInit {
       pages: [
         {
           name: 'Terms & Conditions',
-          link: 'home',
+          link: '',
         },
         {
           name: 'FAQ',
-          link: 'home',
+          link: '',
         },
         {
           name: 'Help Desk',
-          link: 'home',
+          link: '',
         },
         {
           name: 'Job Aplications',
-          link: 'home',
+          link: '',
         },
         {
           name: 'Site Map',
-          link: 'home',
+          link: '',
         },
       ],
     },
@@ -82,7 +82,7 @@ export class FooterComponent implements OnInit {
       pages: [
         {
           name: 'Privacy',
-          link: 'home',
+          link: '',
         },
         {
           name: 'Contact us',
@@ -90,15 +90,15 @@ export class FooterComponent implements OnInit {
         },
         {
           name: 'Newsletter',
-          link: 'home',
+          link: '',
         },
         {
           name: 'Clients Testimonials',
-          link: 'home',
+          link: '',
         },
         {
           name: 'FAQ',
-          link: 'home',
+          link: '',
         },
       ],
     },
