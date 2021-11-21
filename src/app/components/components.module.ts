@@ -10,6 +10,8 @@ import { BannerComponent } from './banner/banner.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServicesComponent } from './services/services.component';
+import { PublicityComponent } from './publicity/publicity.component';
+import {CarouselModule} from "ngx-bootstrap/carousel";
 
 
 
@@ -22,7 +24,8 @@ import { ServicesComponent } from './services/services.component';
     IntroductionComponent,
     BannerComponent,
     ContactFormComponent,
-    ServicesComponent
+    ServicesComponent,
+    PublicityComponent
   ],
   exports: [
     HeaderComponent,
@@ -34,10 +37,11 @@ import { ServicesComponent } from './services/services.component';
     IntroductionComponent,
     ServicesComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        RouterModule,
+        ReactiveFormsModule,
+        CarouselModule
+    ]
 })
 export class ComponentsModule { }
