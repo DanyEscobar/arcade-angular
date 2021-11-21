@@ -9,7 +9,7 @@
   <nav class="nav-menu d-md-inline-block float-end" [class]="toggle ? 'd-block' : 'd-none'">
     <ul class="list-unstyled p-0 m-0">
       <li class="li-menu d-inline" *ngFor="let itemMenu of menu; let index = index" id="{{itemMenu.slug}}" [class.active]="active === itemMenu.slug">
-        <a class="d-block d-md-inline-block text-uppercase position-relative text-decoration-none" (click)="getLocation(itemMenu.slug)">
+        <a href="{{itemMenu.slug}}" class="d-block d-md-inline-block text-uppercase position-relative text-decoration-none">
           {{itemMenu.name}}
         </a>
       </li>
