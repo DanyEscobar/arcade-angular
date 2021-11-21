@@ -1,0 +1,128 @@
+.header-container {
+  top: 0;
+  z-index: 50;
+
+  .logo-arcade {
+    background: #121212;
+    padding: 20px 60px 30px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .menu-bars {
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    top: 20px;
+  }
+
+  .phone-number {
+    padding: 5px 10px;
+    background: #baff00;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+
+  .nav-menu ul li a {
+    padding: 40px 10px 5px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .nav-menu ul li a:after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 0;
+    left: 50%;
+    margin-left: 1px;
+    top: 0;
+    background: #baff00;
+    transition: all .4s;
+  }
+
+  .nav-menu ul li.active > a:after, .nav-menu ul li a:hover:after  {
+    height: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header-container {
+    .phone-number {
+      margin-right: 30px;
+    }
+
+    .nav-menu ul li a {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-container {
+    .phone-number {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+
+    .nav-menu ul li a {
+      margin-right: 5px;
+      font-size: 13px;
+      padding: 37px 7px 5px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .header-container {
+    .nav-menu {
+      position: absolute;
+      width: calc(100% - 90px);
+      left: 80px;
+      background: #121212;
+      top: 100%;
+      margin-top: 11px;
+
+      ul li {
+        a {
+          padding: 16px 21px;
+          border-bottom: 1px solid #202020;
+          margin-right: 0;
+        }
+
+        a:after {
+          left: 20px;
+        }
+      }
+    }
+
+    .nav-menu ul li.active>a:after, .nav-menu ul li a:hover:after {
+      height: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .header-container {
+    background: #121212;
+    padding-right: 66px;
+
+    .logo-arcade {
+      padding: 20px 30px 30px;
+    }
+
+    .nav-menu {
+      width: 100%;
+      left: 0;
+      margin-top: 0;
+      border-top: 2px solid;
+    }
+  }
+}
+
+
