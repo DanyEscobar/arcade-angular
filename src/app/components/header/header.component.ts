@@ -45,20 +45,11 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.active = this.router.url.substring(1);
+    this.getLocation(this.active)
   }
 
   getLocation(location: any): void {
-    console.log(this.router.url.substring(1));
-    const element = document.getElementById(location)
-    if (element === null) {
-      this.active = '';
-      this.router.navigate(['']);
-    } else {
-      this.active = location;
-      this.router.navigate(['' + location]);
-      element.classList.add('active')
-    }
-
+    this.router.navigate(['' + location]);
   }
 
   toggleMenu(): void {
