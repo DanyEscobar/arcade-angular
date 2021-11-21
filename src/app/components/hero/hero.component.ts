@@ -37,20 +37,20 @@ export class HeroComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getIndex('');
-    this.totalItems =  this.slides.length;
+    // this.getIndex('');
+    // this.totalItems =  this.slides.length;
   }
 
 
-  getIndex(value: string): void {
-    let totalItems = $('.slide-item').length;
-    let currentIndex = $('div.active').index() + 2;
-    if (currentIndex > totalItems && value === 'next') {
-      currentIndex = $('div.active').index() + 2 ;
-    } else if( value === 'prev' ) {
-      currentIndex = $('div.active').index();
-    }
-    this.currentIndex = currentIndex;
-    this.totalItems = totalItems;
-  }
+  // getIndex(value: string): void {
+  //   let totalItems = $('.slide-item').length;
+  //   let currentIndex = $('div.active').index() + 2;
+  //   if (currentIndex > totalItems && value === 'next') {
+  //     currentIndex = $('div.active').index() + 2 ;
+  //   } else if( value === 'prev' ) {
+  //     currentIndex = $('div.active').index();
+  //   }
+  //   this.currentIndex = currentIndex;
+  //   this.totalItems = totalItems;
+  // }
 }
