@@ -1,0 +1,92 @@
+.contact-form-container {
+  padding-top: 100px;
+
+  .contact-form {
+    padding-bottom: 100px;
+
+    .title {
+      margin-bottom: 75px;
+
+      h1 {
+        background: #baff00;
+        padding: 0 20px;
+        font-size: 60px;
+      }
+    }
+
+    .info {
+      font-size: 15px;
+      color: #727272;
+      line-height: 2;
+
+      a {
+        color: #222;
+      }
+    }
+
+    .form {
+
+      .input-container {
+        margin-bottom: 20px;
+
+        input, textarea {
+          font-size: 13px;
+          background: #f0f0f0;
+          padding: 15px 20px;
+        }
+
+        .required {
+          font-size: 13px;
+          color: red;
+        }
+
+        .checkbox {
+          font-size: 15px;
+          line-height: 2;
+        }
+      }
+
+      textarea {
+        height: 200px;
+      }
+
+      .checkbox.input-invalid {
+        border: 1px solid red !important;
+      }
+
+      input.input-invalid {
+        border: 1px solid red !important;
+      }
+
+      textarea.input-invalid {
+        border: 1px solid red !important;
+      }
+
+      .btn-sent {
+        border: 4px solid;
+        min-width: 200px;
+        padding: 19px 0;
+        z-index: 1;
+        color: #222222;
+        background: transparent;
+      }
+
+      .btn-sent:after, .btn-sent:before {
+        position: absolute;
+        content: "";
+        width: 26px;
+        height: 4px;
+        right: -15px;
+        background: #222222;
+      }
+
+      .btn-sent:before {
+        bottom: 18px;
+      }
+
+      .btn-sent:after {
+        bottom: 8px;
+      }
+    }
+  }
+}
