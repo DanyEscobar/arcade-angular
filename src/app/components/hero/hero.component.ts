@@ -18,7 +18,7 @@ export class HeroComponent implements OnInit {
     },
     {
       id: 2,
-      backgroundImage: 'assets/images/bg-hero.jpeg',
+      backgroundImage: 'assets/images/header-bg-2.jpg',
       title: 'Minimalistic <br>Architecture <br> and more',
       seeProject: 'See Project',
       link: '',
@@ -27,7 +27,7 @@ export class HeroComponent implements OnInit {
       id: 3,
       backgroundImage: 'assets/images/bg-hero.jpeg',
       title: 'Minimalistic <br>Architecture <br> and more',
-      seeProject: 'See ',
+      seeProject: 'See Project',
       link: '',
     },
   ];
