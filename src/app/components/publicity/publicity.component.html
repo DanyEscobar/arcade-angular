@@ -1,19 +1,13 @@
-<section class="publicity-container pt100 pb50">
-  <div class="publicity-container-image"></div>
-  <div class="container px-3">
+<section class="publicity-container position-relative pb-5 d-block">
+  <div class="publicity-container-image d-none d-lg-block position-absolute h-100 w-50"></div>
+  <div class="container px-3 position-relative">
     <div class="row">
       <div class="col-lg-7 pl-lg-0 offset-lg-5 publicity">
-        <h2 class="publicity-title">Dare to dream of a modern <span>home</span></h2>
+        <h2 class="publicity-title fw-bold">Dare to dream of a modern <span class="d-inline-block px-2">home</span></h2>
         <p>Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia lectus. Pellentesque sed accumsan risus, id aliquam nulla. Integer lorem risus, feugiat at mauris malesuada, accumsan pellentesque ipsum. Nunc dapibus, libero ut pulvinar accumsan, tortor nisl iaculis ligula. Curabitur finibus dolor vel lectus pretium interdum a eget ante. </p>
         <div class="publicity-icons">
-          <div class="publicity-img-icon">
-            <img src="img/icon/light/1.png" alt="">
-          </div>
-          <div class="publicity-img-icon">
-            <img src="img/icon/light/2.png" alt="">
-          </div>
-          <div class="publicity-img-icon">
-            <img src="img/icon/color/3.png" alt="">
+          <div class="publicity-img-icon d-inline-block position-relative" *ngFor="let icon of icons">
+            <img src="{{icon.icon}}" alt="" class="position-absolute">
           </div>
         </div>
       </div>

@@ -12,6 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServicesComponent } from './services/services.component';
 import { PublicityComponent } from './publicity/publicity.component';
 import {CarouselModule} from "ngx-bootstrap/carousel";
+import { StatsComponent } from './stats/stats.component';
+import { ClientsSliderComponent } from './clients-slider/clients-slider.component';
 
 
 
@@ -25,7 +27,9 @@ import {CarouselModule} from "ngx-bootstrap/carousel";
     BannerComponent,
     ContactFormComponent,
     ServicesComponent,
-    PublicityComponent
+    PublicityComponent,
+    StatsComponent,
+    ClientsSliderComponent
   ],
   exports: [
     HeaderComponent,
@@ -35,13 +39,16 @@ import {CarouselModule} from "ngx-bootstrap/carousel";
     ContactFormComponent,
     ReactiveFormsModule,
     IntroductionComponent,
-    ServicesComponent
+    ServicesComponent,
+    PublicityComponent,
+    StatsComponent,
+    ClientsSliderComponent
   ],
-    imports: [
-        CommonModule,
-        RouterModule,
-        ReactiveFormsModule,
-        CarouselModule
-    ]
+  imports: [
+    CommonModule,
+    RouterModule,
+    ReactiveFormsModule,
+    CarouselModule
+  ]
 })
 export class ComponentsModule { }
