@@ -1,0 +1,12 @@
+<section class="stats-container d-block">
+  <div class="container px-3">
+    <div class="row">
+      <div class="col-lg-3 col-md-6" *ngFor="let stat of stats">
+        <div class="stat pt-3 position-relative">
+          <h2 class="fw-bold position-relative d-inline-block float-start mb-0">{{stat.number}}</h2>
+          <p class="position-relative float-start mt-2 ms-2" [innerHTML]="stat.text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
