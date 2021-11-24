@@ -8,22 +8,6 @@ import * as $ from "jquery";
 })
 export class HeroComponent implements OnInit {
 
-  slides: any[] = [
-    {
-      id: 1,
-      backgroundImage: 'assets/images/bg-hero.jpeg',
-      title: 'Minimalistic <br>Architecture <br> and more',
-      seeProject: 'See Project',
-      link: '',
-    },
-    {
-      id: 2,
-      backgroundImage: 'assets/images/header-bg-2.jpg',
-      title: 'Minimalistic <br>Architecture <br> and more',
-      seeProject: 'See Project',
-      link: '',
-    },
-  ];
   currentIndex: any;
   totalItems: any;
   constructor() {
@@ -31,7 +15,8 @@ export class HeroComponent implements OnInit {
 
   ngOnInit(): void {
     this.getIndex('');
-    this.totalItems =  this.slides.length;
+    this.totalItems =  $('.slide-item').length;
+    this.currentIndex = $('div.active').index() + 1;
   }
 
 
