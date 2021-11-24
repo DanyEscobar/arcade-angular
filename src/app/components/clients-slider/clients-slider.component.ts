@@ -17,7 +17,7 @@ export class ClientsSliderComponent implements OnInit {
   }
 
   owlCarousel(): void {
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel-c').owlCarousel({
       loop: true,
       margin: 10,
       nav: false,

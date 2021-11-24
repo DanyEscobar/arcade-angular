@@ -14,6 +14,7 @@ import { PublicityComponent } from './publicity/publicity.component';
 import {CarouselModule} from "ngx-bootstrap/carousel";
 import { StatsComponent } from './stats/stats.component';
 import { ClientsSliderComponent } from './clients-slider/clients-slider.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 
@@ -29,21 +30,23 @@ import { ClientsSliderComponent } from './clients-slider/clients-slider.componen
     ServicesComponent,
     PublicityComponent,
     StatsComponent,
-    ClientsSliderComponent
+    ClientsSliderComponent,
+    ProjectsComponent
   ],
-  exports: [
-    HeaderComponent,
-    HeroComponent,
-    FooterComponent,
-    BannerComponent,
-    ContactFormComponent,
-    ReactiveFormsModule,
-    IntroductionComponent,
-    ServicesComponent,
-    PublicityComponent,
-    StatsComponent,
-    ClientsSliderComponent
-  ],
+    exports: [
+        HeaderComponent,
+        HeroComponent,
+        FooterComponent,
+        BannerComponent,
+        ContactFormComponent,
+        ReactiveFormsModule,
+        IntroductionComponent,
+        ServicesComponent,
+        PublicityComponent,
+        StatsComponent,
+        ClientsSliderComponent,
+        ProjectsComponent
+    ],
   imports: [
     CommonModule,
     RouterModule,
