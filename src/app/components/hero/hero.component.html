@@ -2,19 +2,11 @@
   <app-sidebar></app-sidebar>
   <div id="carouselControls" class="slider carousel slide" data-bs-ride="carousel" data-bs-interval="false">
     <div class="carousel-inner">
-      <div class="slide-item active carousel-item w-100 align-items-center" style="background-image: url('assets/images/bg-hero.jpeg');">
+      <div class="slide-item carousel-item w-100 align-items-center" *ngFor="let slide of slides;let index = index;let isFirst = first;" [ngClass]="{active:isFirst}" style="{{'background-image: url(' + slide.backgroundImage + ');'}}">
         <div class="slide-inner d-flex align-items-center align-middle position-relative h-100">
           <div class="slide-content position-relative mb-lg-5">
-            <h2 class="fw-bold">Minimalistic <br>Architecture <br> and more</h2>
-            <a href="" class="btn-see-project d-inline-block fw-bold text-center position-relative text-decoration-none">See Project</a>
-          </div>
-        </div>
-      </div>
-      <div class="slide-item carousel-item w-100 align-items-center" style="background-image: url('assets/images/bg-hero.jpeg');">
-        <div class="slide-inner d-flex align-items-center align-middle position-relative h-100">
-          <div class="slide-content position-relative mb-lg-5">
-            <h2 class="fw-bold">Minimalistic <br>Architecture <br> and more</h2>
-            <a href="" class="btn-see-project d-inline-block fw-bold text-center position-relative text-decoration-none">See Project</a>
+            <h2 [innerHTML]="slide.title" class="fw-bold"></h2>
+            <a href="{{slide.link}}" class="btn-see-project d-inline-block fw-bold text-center position-relative text-decoration-none">{{slide.seeProject}}</a>
           </div>
         </div>
       </div>
